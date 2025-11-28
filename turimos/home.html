@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Turismo Cristino Castro-PI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpg?v=2" type="image/jpeg">
+    <link rel="icon" href="images/logo.jpg?v=2" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo-slot">
+                    <picture>
+                        <source srcset="images/logo.jpg" type="image/jpeg">
+                        <img src="images/logo.jpg" alt="Logo Turismo Cristino Castro-PI">
+                    </picture>
+                </div>
+                <a href="home.html" class="logo">Turismo Cristino Castro-PI</a>
+                <button class="hamburger" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="gastronomia.html">Gastronomia</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <!-- Carrossel posicionado atrás do conteúdo do hero -->
+            <div class="carousel-container hero-carousel">
+                <div class="carousel">
+                    <div class="slide active">
+                        <img src="images/carousel1.jpg" alt="Letreiro de Cristino Castro" loading="lazy">
+                        <div class="slide-caption">Letreiro de Cristino Castro-PI</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/carousel2.jpg" alt="Cavalgada de Cristino Castro" loading="lazy">
+                        <div class="slide-caption">Cavalgada de Cristino Castro-PI</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/carousel3.jpg" alt="Parque Nacional Serra das Confusões" loading="lazy">
+                        <div class="slide-caption">Parque Nacional Serra das Confusões</div>
+                    </div>
+                </div>
+
+                <button class="carousel-control prev" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-control next" aria-label="Próximo">&#10095;</button>
+
+                <div class="carousel-dots" aria-hidden="false">
+                    <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+                    <button class="dot" data-index="1" aria-label="Slide 2"></button>
+                    <button class="dot" data-index="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+            <!-- botão será posicionado abaixo do hero, fora do carrossel -->
+        </section>
+
+        <!-- CTA posicionado fora do hero/carrossel -->
+        <div class="hero-cta-bottom container">
+            <a class="btn-primary" href="pontos-turisticos.html">Ver Pontos Turísticos</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Turismo Cristino Castro-PI. Todos os direitos reservados. Desenvolvido pela turma do 2º ano Técnico em Desenvolvimento de Sistemas do CETI JP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- VLibras - Acessibilidade em Libras -->
+    <div id="vlibras"></div>
+    <script>
+        (function() {
+            var s = document.createElement('script');
+            s.src = 'https://vlibras.gov.br/app/vlibras.js';
+            s.onload = function() {
+                if (typeof VLibras !== 'undefined') {
+                    new VLibras.Player('vlibras', 'pt-BR');
+                }
+            };
+            document.body.appendChild(s);
+        })();
+    </script>
+</body>
+</html>
